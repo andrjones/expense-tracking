@@ -1,0 +1,15 @@
+{
+  "preset": "google",
+
+  "requireSemicolons": true,
+  "requireParenthesesAroundIIFE": true,
+  "maximumLineLength": 120,
+  "validateLineBreaks": "LF",
+  "validateIndentation": 4,
+  "disallowTrailingComma": true,
+
+  "excludeFiles": [
+    "client/vendor/**",
+    "node_modules/**"
+  ]
+}

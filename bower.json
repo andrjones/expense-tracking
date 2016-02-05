@@ -1,0 +1,46 @@
+{
+  "name": "expense-tracking-light",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Andrew S. Jones"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.4.8",
+    "angular-animate": "1.4.8",
+    "angular-aria": "1.4.8",
+    "angular-messages": "1.4.8",
+    "angular-route": "1.4.8",
+    "angular-material": "1.0.4"
+  },
+  "overrides": {
+    "angular": {
+      "main": ["angular.min.js"]
+    },
+    "angular-animate": {
+      "main": ["angular-animate.min.js"]
+    },
+    "angular-aria": {
+      "main": ["angular-aria.min.js"]
+    },
+    "angular-messages": {
+      "main": ["angular-messages.min.js"]
+    },
+    "angular-route": {
+      "main": ["angular-route.min.js"]
+    },
+    "angular-material": {
+      "main": ["angular-material.min.js", "angular-material.min.css"]
+    }
+  }
+}
