@@ -1,19 +1,8 @@
-var express = require('express');
+var expenseService = require('./services/expenseService');
+var expenseController = require('./controllers/expenseController');
 
 var routeConfig = function(app) {
-    app.use('/api/expenses', expenseRoute());
+    app.use('/api/expenses', expenseController(expenseService));
 };
-
-function expenseRoute() {
-    var expenseRouter = express.Router();
-    var expenseService = require('./services/expenseService');
-    var expenseController = require('./controllers/expenseController')(expenseService);
-
-    expenseRouter
-        .route('/')
-        .get(expenseController.getAllExpenses);
-
-    return expenseRouter;
-}
 
 module.exports = routeConfig;
