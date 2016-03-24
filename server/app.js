@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var routeConfig = require('./routeConfig');
+require('./db'); // initialize bookshelf
 
 var port = process.env.PORT || 5101;
 var app = express();

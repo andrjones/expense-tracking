@@ -10,11 +10,14 @@
   "author": "Andrew S. Jones",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "1.14.2",
-    "express": "4.13.4"
+    "body-parser": "1.15.0",
+    "bookshelf": "0.9.2",
+    "express": "4.13.4",
+    "knex": "0.10.0",
+    "mysql": "2.10.2"
   },
   "devDependencies": {
-    "gulp": "3.9.0",
+    "gulp": "3.9.1",
     "gulp-inject": "3.0.0",
     "gulp-jscs": "3.0.2",
     "gulp-jshint": "1.11.2",
