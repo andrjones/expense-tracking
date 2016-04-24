@@ -13,7 +13,7 @@ var categoryController = function(categoryService) {
         .post(function(request, response) {
             categoryService.addCategory(request.body).then(function(category) {
                 response.send(category);
-            })
+            });
         });
 
     categoryRouter
@@ -21,12 +21,12 @@ var categoryController = function(categoryService) {
         .get(function(request, response) {
             categoryService.getCategory(request.params.id).then(function(category) {
                 response.send(category);
-            })
+            });
         })
         .delete(function(request, response) {
             categoryService.archiveCategory(request.params.id).then(function() {
                 response.status(200);
-            })
+            });
         });
 
     return categoryRouter;
