@@ -7,7 +7,7 @@ micro-services, caching layers, etc.
 
 Initial Goals:
 + Node api server providing basic CRUD and a couple aggregate outputs
-+ Db - still deciding between mongo or mysql
++ Db - mysql with bookshelf for an orm and knex for migrations
 + Angular/Angular material front-end served up via nginx
 + Basic authentication using Auth0
 
@@ -15,6 +15,5 @@ Future goals (for fun and learning):
 + User Authorization (basic roles)
 + Caching with Redis
 + Notify front end of changes via web socket
-+ Turn the app into a microservice and put a gateway app in front of it
 + Maybe rewrite with es6 or typescript
 
